@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>店と世界｜大阪・心斎橋の求人</title>
+<meta name="description" content="AI・IT、飲食店の店長、アルバイト、レッカー車の運転手、営業。大阪・心斎橋で、いろんな仕事の仲間を募集しています。">
+<meta property="og:title" content="店と世界｜大阪・心斎橋の求人">
+<meta property="og:description" content="自分に合う仕事を選んで、LINEで気軽に相談できます。">
+<meta property="og:image" content="img/logo.jpg">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14203f; --orange:#f07628; --yellow:#ffc93c; --sky:#4cb8e6; --cream:#fbf5e9;
+  --ink:#14203f; --muted:#5b6478; --card:#fff; --line:#06c755;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN",sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-weight:500}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+
+/* ヒーロー */
+.hero{padding:28px 0 8px;text-align:center}
+.hero img{width:150px;height:150px;border-radius:50%;border:5px solid var(--navy);box-shadow:6px 6px 0 var(--orange)}
+.hero h1{font-size:30px;font-weight:800;margin-top:16px;letter-spacing:.04em}
+.hero .sub{font-size:15px;color:var(--muted);margin-top:4px}
+.hero .catch{display:inline-block;margin-top:18px;background:var(--navy);color:#fff;font-weight:800;font-size:18px;padding:10px 22px;border-radius:999px}
+
+/* 選ぶ */
+.pick{padding:28px 0 8px}
+.pick h2,.sec-title{font-size:22px;font-weight:800;text-align:center}
+.pick p.lead{text-align:center;color:var(--muted);font-size:14px;margin:4px 0 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{display:block;text-decoration:none;background:var(--card);border:3px solid var(--navy);border-radius:18px;overflow:hidden;box-shadow:4px 4px 0 var(--navy);transition:transform .12s}
+.tile:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--navy)}
+.tile img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#f3e6cf}
+.tile .t{padding:8px 10px 10px}
+.tile b{display:block;font-size:16px;font-weight:800;line-height:1.35}
+.tile span{display:block;font-size:13px;color:var(--orange);font-weight:800;margin-top:2px}
+
+/* 職種の詳しい中身 */
+.job{background:var(--card);border:3px solid var(--navy);border-radius:22px;margin:22px 0;overflow:hidden;scroll-margin-top:12px}
+.job>img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#f3e6cf}
+.job .in{padding:18px 18px 20px}
+.tag{display:inline-block;background:var(--yellow);font-size:12px;font-weight:800;padding:2px 10px;border-radius:999px}
+.job h3{font-size:22px;font-weight:800;margin:6px 0 2px;line-height:1.4}
+.pay{font-size:24px;font-weight:800;color:var(--orange)}
+.pay small{font-size:14px;color:var(--muted);font-weight:500}
+.job ul{list-style:none;margin:12px 0 0}
+.job li{padding:8px 0;border-top:1px dashed #d9cdb5;font-size:15px;display:flex;gap:10px}
+.job li i{font-style:normal;flex:0 0 5.2em;color:var(--muted);font-size:13px;padding-top:2px}
+.job .msg{margin-top:12px;font-size:15px}
+.soon{background:#fff4e6;border-radius:12px;padding:10px 12px;font-size:14px;margin-top:12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;background:var(--line);color:#fff;text-decoration:none;font-weight:800;font-size:17px;padding:14px;border-radius:999px;box-shadow:0 4px 0 #04913f}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #04913f}
+.back{display:block;text-align:center;font-size:13px;color:var(--muted);margin-top:10px}
+
+/* 流れ */
+.flow{padding:12px 0 8px}
+.steps{display:grid;gap:10px;margin-top:12px}
+.step{display:flex;gap:12px;align-items:center;background:#fff;border-radius:16px;padding:12px 14px;border:2px solid #eadcc1}
+.step b{flex:0 0 38px;height:38px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:18px}
+
+footer{text-align:center;padding:30px 0 50px;font-size:13px;color:var(--muted)}
+footer a.btn{max-width:420px;margin:0 auto 18px}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(251,245,233,.95) 30%)}
+.sticky a{max-width:480px;margin:0 auto;background:var(--navy);box-shadow:0 4px 0 #000}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <img src="img/logo.jpg" alt="店と世界">
+  <h1>店と世界</h1>
+  <p class="sub">大阪・心斎橋の求人</p>
+  <p class="catch">稼ぎ方は、働きながら覚える。</p>
+</header>
+
+<section class="pick" id="pick">
+  <h2>あなたに合う仕事を<br>選んでください</h2>
+  <p class="lead">押すと、その仕事のくわしい条件にとびます</p>
+  <div class="grid" id="grid"></div>
+</section>
+
+<div id="jobs"></div>
+
+<section class="flow">
+  <h2 class="sec-title">応募の流れ</h2>
+  <div class="steps">
+    <div class="step"><b>1</b><div>気になる仕事を選ぶ</div></div>
+    <div class="step"><b>2</b><div>「LINEで相談する」を押して、そのまま送る</div></div>
+    <div class="step"><b>3</b><div>担当から返事が届いて、話す日を決める</div></div>
+  </div>
+</section>
+
+<footer>
+  <a class="btn" href="#" data-line="相談したいです">LINEで相談する</a>
+  <p>「話だけ聞きたい」でも大丈夫です。</p>
+  <p>© 店と世界</p>
+</footer>
+</div>
+
+<div class="sticky"><a class="btn" href="#pick">仕事を選ぶ</a></div>
+
+<script>
+// ここを書き換えれば、サイト全体の中身が変わる
+const LINE_ID = "@781mmtgj";  // 応募の送り先（公式LINE）
+const JOBS = [
+  { id:"ai", img:"img/job_ai.jpg", tag:"未経験OK", title:"AIとITの仕事",
+    pay:"時給1,500円〜", short:"時給1,500円〜",
+    rows:[["仕事","AIを使ったSNS運用・動画編集・マーケティング"],["場所","心斎橋駅 徒歩5分"],["道具","パソコン1人1台"],["時間","10時〜18時（フレックスあり）"],["休み","土日"]],
+    msg:"パソコンが苦手でも大丈夫です。いつか1人で仕事をつくりたい人を待っています。" },
+  { id:"tencho", img:"img/job_tencho.jpg", tag:"正社員", title:"飲食店の店長",
+    pay:"基本給30万円〜<small>＋歩合</small>", short:"基本給30万円〜＋歩合",
+    rows:[["仕事","飲食店の運営・スタッフのまとめ役"],["場所","大阪・心斎橋"],["この先","海外出店まで一緒に行ける人"]],
+    msg:"お店を育てて、いつか世界へ。一緒に店をつくる人を探しています。" },
+  { id:"baito", img:"img/job_baito.jpg", tag:"アルバイト", title:"飲食店のアルバイト<br>（キッチン・ホール）",
+    pay:"時給1,500円〜<small>（研修中1,300円）</small>", short:"時給1,500円〜",
+    rows:[["日数","週2日〜／1日3時間〜"],["場所","大阪・心斎橋"],["経験","未経験OK"]],
+    msg:"はじめての飲食でも、ていねいに教えます。" },
+  { id:"tow", img:"img/job_tow.jpg", tag:"運転の仕事", title:"レッカー車の運転手",
+    pay:"", short:"条件はLINEで",
+    rows:[["仕事","レッカー車での車の運搬"]],
+    soon:"くわしい条件（時給・必要な免許・場所）は、いまLINEでお伝えしています。気になったら、まず聞いてください。" },
+  { id:"eigyo", img:"img/job_eigyo.jpg", tag:"営業の仕事", title:"営業の仕事",
+    pay:"", short:"条件はLINEで",
+    rows:[["仕事","会社やお店への営業"]],
+    soon:"くわしい条件は、いまLINEでお伝えしています。人と話すのが好きな人、お待ちしています。" },
+  { id:"soudan", img:"img/job_soudan.jpg", tag:"迷ったら", title:"まだ決めていない・<br>相談だけしたい",
+    pay:"", short:"話を聞くだけでOK",
+    rows:[],
+    msg:"どの仕事が合うか、一緒に考えます。やってみたいこと・できる日だけ送ってください。" },
+];
+
+const lineURL = t => "https://line.me/R/oaMessage/" + encodeURIComponent(LINE_ID) + "/?text=" + encodeURIComponent(t);
+const plain = s => s.replace(/<[^>]+>/g, "");
+
+document.getElementById("grid").innerHTML = JOBS.map(j =>
+  `<a class="tile" href="#${j.id}"><img src="${j.img}" alt="" loading="lazy"><div class="t"><b>${j.title}</b><span>${j.short}</span></div></a>`).join("");
+
+document.getElementById("jobs").innerHTML = JOBS.map(j => `
+  <section class="job" id="${j.id}">
+    <img src="${j.img}" alt="" loading="lazy">
+    <div class="in">
+      <span class="tag">${j.tag}</span>
+      <h3>${j.title}</h3>
+      ${j.pay ? `<div class="pay">${j.pay}</div>` : ""}
+      ${j.rows.length ? `<ul>${j.rows.map(r => `<li><i>${r[0]}</i><span>${r[1]}</span></li>`).join("")}</ul>` : ""}
+      ${j.msg ? `<p class="msg">${j.msg}</p>` : ""}
+      ${j.soon ? `<p class="soon">${j.soon}</p>` : ""}
+      <a class="btn" href="${lineURL("【" + plain(j.title) + "】について聞きたいです")}">LINEで相談する</a>
+      <a class="back" href="#pick">↑ ほかの仕事を見る</a>
+    </div>
+  </section>`).join("");
+
+document.querySelectorAll("[data-line]").forEach(a => a.href = lineURL(a.dataset.line));
+</script>
+</body>
+</html>
